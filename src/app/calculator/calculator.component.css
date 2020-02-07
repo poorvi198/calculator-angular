@@ -1,0 +1,11 @@
+.calculator{
+    margin: 15px;
+    width: 300px;
+    padding: 6px;
+    background-color: #555555;
+}
+
+.number-div{
+    width: 75%;
+    float: left;
+}

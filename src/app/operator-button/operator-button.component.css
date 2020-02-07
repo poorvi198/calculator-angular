@@ -1,0 +1,23 @@
+.btn{
+    color: white;
+    background-color: #343434;
+    width:24.4%;
+    height:46px;
+    margin:0.8px;
+}
+
+.btn:hover{
+    background-color: darkgray;
+}
+
+.result{
+    background-color:#345b7a;
+    width:24.3%;
+    height:46px;
+    color : white;
+    margin:1px;
+}
+
+.result:hover{
+  background-color:#2d516d;
+}

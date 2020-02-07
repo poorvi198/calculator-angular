@@ -1,0 +1,17 @@
+<div [class]="options.className"  >
+  <app-display [dispId]="calcId" [value]="clickedButton" (keyPress)="keyPressHandler($event)" ></app-display>
+
+  <div [class]="numberDiv">
+    <app-number-button  *ngFor="let number of calculator.numbers; index as i" [value]="number" [numId]="i" (ButtonClicked)="onNumberButtonClicked($event)"></app-number-button>
+  </div>
+
+  <div>
+  <app-operator-button  *ngFor="let operator of calculator.operators; index as i" [value]="operator" [opId]="i" (ButtonClicked)="onOperatorButtonClicked($event)"></app-operator-button>
+  </div>
+
+  <div>
+    <app-operator-button  *ngFor="let other of calculator.others; index as i" [value]="other" [opId]="i" (ButtonClicked)="onOtherButtonClicked($event)"></app-operator-button>
+  </div>
+</div>
+
+
